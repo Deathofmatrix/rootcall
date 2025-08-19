@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cw6yj2eaoft5b"]
+
+[node name="World" type="Node2D"]
+
+[node name="Tilemaps" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Tilemaps"]
