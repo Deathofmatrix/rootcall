@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://yp83nhm7krm7"]
+
+[ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://plant.gd" id="1_tvn35"]
+[ext_resource type="Texture2D" uid="uid://bnoc2ffxjjxvj" path="res://assets/tilemaps/tiles.png" id="2_djlq1"]
+[ext_resource type="Script" uid="uid://cxxcn87qxkemb" path="res://common/components/stats_component.gd" id="3_lk3vj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1p1s"]
+size = Vector2(16, 16)
+
+[node name="Plant" type="Area2D"]
+script = ExtResource("1_tvn35")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_w1p1s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+texture = ExtResource("2_djlq1")
+region_enabled = true
+region_rect = Rect2(0, 68, 16, 16)
+
+[node name="StatsComponent" type="Node" parent="."]
+script = ExtResource("3_lk3vj")
+metadata/_custom_type_script = "uid://cxxcn87qxkemb"

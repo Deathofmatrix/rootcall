@@ -1,5 +1,5 @@
 class_name StatsComponent
-extends Node
+extends Resource
 
 signal health_changed()
 signal no_health()
