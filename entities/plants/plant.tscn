@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://yp83nhm7krm7"]
+[gd_scene load_steps=6 format=3 uid="uid://yp83nhm7krm7"]
 
-[ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://plant.gd" id="1_tvn35"]
+[ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://entities/plants/plant.gd" id="1_tvn35"]
 [ext_resource type="Texture2D" uid="uid://bnoc2ffxjjxvj" path="res://assets/tilemaps/tiles.png" id="2_djlq1"]
-[ext_resource type="Script" uid="uid://cxxcn87qxkemb" path="res://common/components/stats_component.gd" id="3_lk3vj"]
+[ext_resource type="Resource" uid="uid://cme645v1t2rfx" path="res://data/attack_plant.tres" id="2_lk3vj"]
+[ext_resource type="Script" uid="uid://cfrqvbnw5vg64" path="res://common/components/drag_and_drop.gd" id="4_djlq1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1p1s"]
 size = Vector2(16, 16)
 
 [node name="Plant" type="Area2D"]
 script = ExtResource("1_tvn35")
+stats = ExtResource("2_lk3vj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, 8)
@@ -20,6 +22,7 @@ texture = ExtResource("2_djlq1")
 region_enabled = true
 region_rect = Rect2(0, 68, 16, 16)
 
-[node name="StatsComponent" type="Node" parent="."]
-script = ExtResource("3_lk3vj")
-metadata/_custom_type_script = "uid://cxxcn87qxkemb"
+[node name="DragAndDrop" type="Node" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("4_djlq1")
+target = NodePath("..")
+metadata/_custom_type_script = "uid://cfrqvbnw5vg64"
