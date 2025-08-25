@@ -28,7 +28,7 @@ material = SubResource("ShaderMaterial_w1p1s")
 position = Vector2(8, 8)
 texture = ExtResource("2_djlq1")
 region_enabled = true
-region_rect = Rect2(0, 68, 16, 16)
+region_rect = Rect2(85, 34, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, 8)
@@ -43,7 +43,7 @@ metadata/_custom_type_script = "uid://cfrqvbnw5vg64"
 script = ExtResource("6_w1p1s")
 visuals = NodePath("../Visuals")
 outline_colour = Color(1, 1, 1, 1)
-outline_thickness = 8
+outline_thickness = 4
 metadata/_custom_type_script = "uid://b0coxf2xi0lqs"
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
