@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://yp83nhm7krm7"]
 
-[ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://entities/plants/plant.gd" id="1_tvn35"]
+[ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://entities/plants/unit.gd" id="1_tvn35"]
 [ext_resource type="Texture2D" uid="uid://bnoc2ffxjjxvj" path="res://assets/tilemaps/tiles.png" id="2_djlq1"]
 [ext_resource type="Resource" uid="uid://cme645v1t2rfx" path="res://data/attack_plant.tres" id="2_lk3vj"]
 [ext_resource type="Shader" uid="uid://dlcw7ofxx4130" path="res://assets/shaders/2d_outline_shader.gdshader" id="3_lk3vj"]
@@ -16,7 +16,7 @@ shader_parameter/line_thickness = 0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1p1s"]
 size = Vector2(16, 16)
 
-[node name="Plant" type="Area2D"]
+[node name="Unit" type="Area2D"]
 script = ExtResource("1_tvn35")
 stats = ExtResource("2_lk3vj")
 metadata/_edit_group_ = true
