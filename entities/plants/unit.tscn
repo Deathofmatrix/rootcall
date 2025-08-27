@@ -16,7 +16,7 @@ shader_parameter/line_thickness = 0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1p1s"]
 size = Vector2(16, 16)
 
-[node name="Unit" type="Area2D"]
+[node name="Unit" type="Area2D" groups=["units"]]
 script = ExtResource("1_tvn35")
 stats = ExtResource("2_lk3vj")
 metadata/_edit_group_ = true

@@ -1,7 +1,7 @@
 class_name DragAndDrop
 extends Node
 
-signal drag_cancelled(starting_position: Vector2)
+signal drag_canceled(starting_position: Vector2)
 signal drag_started
 signal dropped(starting_position: Vector2)
 
@@ -37,7 +37,7 @@ func _end_dragging() -> void:
 
 func _cancel_dragging() -> void:
 	_end_dragging()
-	drag_cancelled.emit(starting_position)
+	drag_canceled.emit(starting_position)
 
 
 func _start_dragging() -> void:

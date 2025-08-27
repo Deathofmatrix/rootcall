@@ -1,4 +1,4 @@
-class_name StatsComponent
+class_name UnitStats
 extends Resource
 
 signal health_changed()
