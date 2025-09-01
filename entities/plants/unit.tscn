@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://blid02pw4t5w1" path="res://entities/plants/unit.gd" id="1_tvn35"]
 [ext_resource type="Texture2D" uid="uid://bnoc2ffxjjxvj" path="res://assets/tilemaps/tiles.png" id="2_djlq1"]
-[ext_resource type="Resource" uid="uid://cme645v1t2rfx" path="res://data/attack_plant.tres" id="2_lk3vj"]
+[ext_resource type="Resource" uid="uid://cme645v1t2rfx" path="res://data/units/attack_plant.tres" id="2_lk3vj"]
 [ext_resource type="Shader" uid="uid://dlcw7ofxx4130" path="res://assets/shaders/2d_outline_shader.gdshader" id="3_lk3vj"]
 [ext_resource type="Script" uid="uid://cfrqvbnw5vg64" path="res://common/components/drag_and_drop.gd" id="4_djlq1"]
 [ext_resource type="Script" uid="uid://b0coxf2xi0lqs" path="res://common/components/outline_highlighter.gd" id="6_w1p1s"]
